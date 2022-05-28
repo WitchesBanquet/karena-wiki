@@ -2,56 +2,11 @@
 title: 人物图鉴
 description: 
 published: true
-date: 2022-05-28T14:17:42.736Z
+date: 2022-05-28T14:18:55.897Z
 tags: 
 editor: code
 dateCreated: 2022-05-28T12:37:20.240Z
 -->
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript">
-$(document).ready(
-  $(function()
-  {
-      let switchFlag=0;
-
-      function change_node()
-      {
-          switch(switchFlag)
-          {
-              case 0:
-                  $('#content').fadeOut("1000");
-                  setTimeout(function(){
-                      $('#switchs').text("2");
-                      $('#content').html("");
-                  },400);
-                  $('#content').fadeIn("1000")
-                  switchFlag+=1;
-                  break;
-
-              case 1:
-                  $('#content').fadeOut("1000");
-                  setTimeout(function(){
-                      $('#switchs').text("2");
-                      $('#content').html("");
-                  },400);
-                  $('#content').fadeIn("1000")
-                  switchFlag+=1;
-                  break;
-          }
-      }
-
-      $('#switchs').click(change_node);
-    
-	}
-);
-  
-  $(document).ready(function () {
-        alert("ready JQ");
-      });
-  
-  alert("ready JS")
-</script> 
 
 <div id="switchs">按首字母排序</div>
     <div id="content">
